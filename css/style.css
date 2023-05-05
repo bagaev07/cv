@@ -1,32 +1,119 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 
-/*
-color:
-#FCFFE7 / background
-#BC002D / text
-*/
+li {
+    list-style: none;
+}
+
+:root {
+    --fonts-color: #484866;
+    --background-color: #f2f2fa;
+    --background-icon: #464989;
+    --background-color-active: #f79784;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+}
 
 body {
-    background-color: #ffffff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 0.7em;
+    background-color: var(--background-color);
+    color: var(--fonts-color);
+    transition: all .5s ease-in-out;
 }
 
-hr {
-    border: none;
-    border-top: 5px dotted #BC002D;
-    width: 10%;
+a {
+    display: inline-block;
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
 }
 
-img{
-    width: 150px;
-    height: 150px;
+header {
+    height: 100vh;
+    color: var(--fonts-color);
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem 18rem;
+}
+
+.section {
+    transform: translateY(-100%) scale(0);
+    transition: all .4s ease-in-out;
+}
+
+.sec1 {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+
+.sec2 {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+
+.sec3 {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+
+.sec4 {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+
+.sec5 {
+    display: none;
+    transform: translateY(0) scale(0);
+}
+
+/* Controls */
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.controls .active-btn {
+    background-color: var(--background-color-active) !important;
+    transition: all .4s ease-in-out;
+
+}
+
+.control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--background-icon);
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    margin: .5rem 0;
+    box-shadow: var(--box-shadow-1);
 }
 
-h1 {
-    color: #000000;
-    font-family: "Eh_cyr", serif;
-}
-
-h3 {
-    color: #BC002D;
-    font-family: "Eh_cyr", serif;
+.control i {
+    font-size: 1.0rem;
+    pointer-events: none;
 }
