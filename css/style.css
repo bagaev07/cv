@@ -636,9 +636,15 @@ section {
     font-size: 1.3rem;
 }
 
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
 .contact-icon {
     display: flex;
-    margin-top: 2rem;
 }
 
 .contact-icon a {
@@ -716,7 +722,7 @@ section {
 	display: block;
 	width: 1px;
 	height: 100%;
-	background: rgba(207, 207, 207, 0.83);
+	background: rgba(221, 221, 221, 0.65);
 	position: absolute;
 	left: 20%;
 	top: 0;
@@ -735,7 +741,7 @@ section {
 }
 
 .slide-dark .lines > div {
-	background: rgba(222, 222, 222, 0.8);
+	background: rgba(221, 221, 221, 0.65);
 }
 
 
@@ -789,6 +795,26 @@ section {
     transition: all .4s ease-in-out;
 }
 
+.form-btn {
+    background-color: var(--color-orange);
+    padding: .5rem 2rem;
+    color: var(--fonts-color);
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.form-btn:hover {
+    background-color: inherit;
+    border: solid 1px var(--color-orange);
+    transition: all .4s ease-in-out;
+}
+
+
 .main-title {
     text-align: center;
 }
@@ -821,7 +847,7 @@ section {
 
 /*Стили для мобильных устройств*/
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
     header {
         padding: 0;
@@ -961,10 +987,6 @@ section {
         margin-bottom: 1.2rem;
     }
 
-    .left-contact .contact-icon {
-        margin-top: 1.2rem;
-    }
-
     .right-contact {
         margin-left: 0;
     }
@@ -991,20 +1013,12 @@ section {
     .main-title .bg-text {
         font-size: 3rem;
         top: 30%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
 }
 
 
-/*Стили для планшетов и небольших ноутбуков*/
-
-@media screen and (min-width: 601px) and (max-width: 760px){
-
-}
-
-/*Стили для ноутбуков и десктопов*/
-
-
-@media screen and (min-width: 761px){
-
-}

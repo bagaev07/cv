@@ -32,7 +32,7 @@
                     Adipisci aliquam aspernatur atque consequuntur dicta doloremque earum eos error est id
                 </p>
                 <div class="btn-cont">
-                    <a href="" class="main-btn">
+                    <a href="img/cv.pdf" class="main-btn" download="cv">
                         <span class="btn-text">Скачать CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -292,10 +292,10 @@
                     </div>
                 </div>
                 <div class="blog-item">
-                    <img src="img/certificate1.jpeg" alt="" class="blog-img">
+                    <img src="img/stepik-certificate.jpg" alt="Электронный сертификат" class="blog-img">
                     <div class="blog-text">
-                        <p>2022 - Настоящие время</p>
-                        <h4>Best English - <span>изучение английского языка</span></h4>
+                        <p>Май 2023</p>
+                        <h4>Stepik - <span>Управление проектами</span></h4>
                         <p>Описание для чего я это делаю</p>
                     </div>
                 </div>
@@ -352,6 +352,12 @@
                             </div>
                         </div>
                         <div class="contact-icons">
+                            <div class="submit-btn">
+                                <a href="img/cv.pdf" class="main-btn" download="cv">
+                                    <span class="btn-text">Скачать CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
                             <div class="contact-icon">
                                 <a href="#" target="_blank">
                                     <i class="fab fa-vk"></i>
@@ -369,26 +375,24 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form action="" class="contact-form" method="POST">
                             <div class="input-control ">
                                 <label class="i-c-2">
-                                    <input type="text" required placeholder="Ваше Имя">
-                                    <input type="email" class="email" required placeholder="Ваше e-mail">
+                                    <input type="text" id="name" name="name" placeholder="Ваше Имя" required>
+                                    <input type="email" id="email" name="email" class="email" placeholder="Ваше e-mail" required>
                                 </label>
                             </div>
                             <div class="input-control">
-                                <label for="">
-                                    <input type="text" required placeholder="Тема письма">
+                                <label for="subject">
+                                    <input type="text" id="subject" name="subject" placeholder="Тема письма" required>
                                 </label>
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Писать тут...."></textarea>
+                                <label for="message"></label>
+                                <textarea name="message" id="message" cols="15" rows="8" placeholder="Писать тут...."></textarea>
                             </div>
-                            <div class="submit-btn">
-                                <a href="" class="main-btn">
-                                    <span class="btn-text">Скачать CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
+                            <div class="input-button">
+                                <input type="submit" VALUE="Отправить" class="form-btn">
                             </div>
                         </form>
                     </div>
