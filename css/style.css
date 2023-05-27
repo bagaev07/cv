@@ -1020,4 +1020,28 @@ section {
     .contact-info {
         justify-content: center;
     }
+
+    .section {
+        padding: 2rem 1.5rem;
+    }
+
+    .right-header .name {
+        letter-spacing: 1px;
+    }
+
+    .stat-title {
+        padding: 0.5rem;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .contact-content {
+        margin: 1rem 0;
+    }
+    .contact-icons {
+        padding: 0;
+    }
+
 }
