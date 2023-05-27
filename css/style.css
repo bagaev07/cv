@@ -189,11 +189,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 12rem;
+    padding-right: 10rem;
 }
 
 .right-header .name {
     font-size: 3rem;
+    letter-spacing: .3rem;
 }
 
 .name span {
@@ -202,8 +203,8 @@ section {
 
 .right-header p {
     margin: 1.5rem 0;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /*About*/
@@ -299,14 +300,14 @@ section {
 /* about left*/
 
 .about-left {
-    padding-right: 5rem;
+    padding-right: 2rem;
     padding-top: 2rem;
 }
 
 .about-left p {
-    line-height: 2rem;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .progress-bars {
@@ -379,7 +380,7 @@ section {
 
 .stat-title {
     padding: 1.5rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -440,7 +441,7 @@ section {
 
 .timeline-item p {
     color: var(--fonts-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -593,30 +594,34 @@ section {
 
 .contact-content {
     display: flex;
-    padding-top: 3rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
 }
 
-.left-contact {
-    flex: 2;
-}
-
-.left-contact h4 {
-    margin-top: .8rem;
+.contact-text h4 {
+    margin-top: 1rem;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-.left-contact p {
+.contact-text p {
     margin: 1rem 0;
     line-height: 1rem;
     font-size: 1.2rem;
 }
+
+
 
 .contact-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
+    margin: 0 1rem;
 }
 
 .contact-item span {
@@ -638,9 +643,11 @@ section {
 
 .contact-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 1.2rem;
+    margin: 1.2rem 0;
+    padding: 2rem 0;
+    flex-wrap: wrap;
 }
 
 .contact-icon {
@@ -674,46 +681,13 @@ section {
     font-size: 1rem;
 }
 
-.right-contact {
-    flex: 3;
-    margin-left: 3rem;
-}
 
-.input-control {
-    margin: 1rem 0;
-}
-
-.input-control input, textarea {
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: inherit;
-    padding: .5rem 1.1rem;
-    outline: none;
-    background-color: var(--backg_icon-2);
-    width: 100%;
-    color: var(--fonts-color);
-    resize: none;
-}
-
-.input-control input:focus, textarea:focus {
-    background-color: var(--color-orange);
-}
-
-.i-c-2 {
+.contact-info {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-.email {
-    margin-left: 2rem;
-}
-
-.submit-btn {
-    display: flex;
-    justify-content: flex-start;
-}
-
-
 
 
 /* Independent component*/
@@ -794,26 +768,6 @@ section {
     transform: translateX(0);
     transition: all .4s ease-in-out;
 }
-
-.form-btn {
-    background-color: var(--color-orange);
-    padding: .5rem 2rem;
-    color: var(--fonts-color);
-    font-family: inherit;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-    letter-spacing: 1px;
-}
-
-.form-btn:hover {
-    background-color: inherit;
-    border: solid 1px var(--color-orange);
-    transition: all .4s ease-in-out;
-}
-
 
 .main-title {
     text-align: center;
@@ -952,6 +906,7 @@ section {
 
     .about-left p {
         padding-left: 0;
+        text-align: center;
     }
 
     .timeline {
@@ -983,17 +938,58 @@ section {
         flex-direction: column;
     }
 
-    .left-contact {
-        margin-bottom: 1.2rem;
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--bc-header-content-right);
     }
 
-    .right-contact {
-        margin-left: 0;
+    .controls .control {
+        margin: .5rem .3rem;
     }
 
-    .contact-form {
-        margin-bottom: 5rem;
+    .main-title .bg-text {
+        display: none;
     }
+
+}
+
+@media screen and (min-width: 751px) and (max-width: 980px) {
+
+    .right-header {
+        padding-right: 2rem;
+    }
+
+    .image img {
+        width: 430px;
+        height: 230px;
+    }
+
+    .right-header .name {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+    }
+
+    .right-header p {
+        font-size: 1.2rem;
+
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-right {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 
     .controls {
         top: auto;
@@ -1005,20 +1001,23 @@ section {
         width: 100%;
         background-color: var(--bc-header-content-right);
     }
+
     .controls .control {
         margin: .5rem .3rem;
     }
 
-
-    .main-title .bg-text {
-        font-size: 3rem;
-        top: 30%;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+    main .section {
+        padding: 2rem 5rem;
     }
-
 }
 
 
+@media screen and (max-width: 455px) {
+    .submit-btn {
+        margin-bottom: 1.2rem;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+}
