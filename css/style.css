@@ -489,6 +489,12 @@ section {
 
 .portfolio-hover h3 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.portfolio-hover p {
+    font-size: 1rem;
     margin-bottom: 1.2rem;
     color: var(--color-white);
 }
@@ -529,6 +535,30 @@ section {
     transform: scale(1);
     transition: all .5s ease-in-out;
 }
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(70, 73,137, .5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.doc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    transform: translate(-50%,-50%);
+}
+
 
 
 /*Certificates section*/
@@ -798,6 +828,95 @@ section {
     letter-spacing: 0.5rem;
 }
 
+/* Page case steak house */
+
+.case-img {
+    background: url("../img/case-meat.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: local;
+    width: 100%;
+    height: 100vh;
+    opacity: 10%;
+}
+
+.case-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 8rem 0;
+}
+
+.text-animation h2{
+    font-size: 5rem;
+}
+
+
+.case-header_text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.case-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+}
+
+.case-item {
+    background-color: rgba(242, 242, 250, .9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.2);
+    transition: all .4s ease-in-out;
+}
+
+.case-item:hover {
+    transform: scale(1.1);
+    transition: all .6s ease-in-out;
+}
+
+.case-item h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.2rem;
+}
+
+.case-item_title span {
+    color: var(--color-orange);
+}
+
+.case-item p{
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding-bottom: 1.3rem;
+    letter-spacing: 1.1px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+swiper-slide span {
+    color: var(--color-orange);
+    font-weight: 700;
+}
 
 /*Стили для мобильных устройств*/
 
