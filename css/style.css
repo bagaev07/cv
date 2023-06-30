@@ -848,10 +848,13 @@ section {
     margin: 8rem 0;
 }
 
+.case-header .bg-text {
+    top: 35%;
+}
+
 .text-animation h2{
     font-size: 5rem;
 }
-
 
 .case-header_text {
     font-size: 1.5rem;
@@ -919,6 +922,87 @@ swiper-slide span {
 }
 
 /*Стили для мобильных устройств*/
+
+@media screen and (min-width: 1000px) and (max-width: 1045px) {
+    .case-container {
+        padding: 2rem 5rem;
+    }
+
+    .case-header {
+        margin: 5rem 0;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 999px) {
+
+    .right-header {
+        padding-right: 2rem;
+    }
+
+    .image img {
+        width: 430px;
+        height: 230px;
+    }
+
+    .right-header .name {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+    }
+
+    .right-header p {
+        font-size: 1.2rem;
+
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-right {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--bc-header-content-right);
+    }
+
+    .controls .control {
+        margin: .5rem .3rem;
+    }
+
+    main .section {
+        padding: 2rem 5rem;
+    }
+
+    .case-container {
+        padding: 2rem 5rem;
+    }
+
+    .case-header {
+        margin: 3rem 0;
+    }
+
+    .text-animation h2 {
+        font-size: 4rem;
+    }
+
+    .case-header_text {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+}
+
 
 @media screen and (max-width: 750px) {
 
@@ -1076,59 +1160,25 @@ swiper-slide span {
         display: none;
     }
 
-}
-
-@media screen and (min-width: 751px) and (max-width: 980px) {
-
-    .right-header {
-        padding-right: 2rem;
+    .case-container {
+        padding: 2rem 2.5rem;
     }
 
-    .image img {
-        width: 430px;
-        height: 230px;
+    .case-header {
+        margin: 3rem 0;
     }
 
-    .right-header .name {
-        font-size: 2rem;
-        letter-spacing: .3rem;
+    .text-animation h2 {
+        font-size: 3.2rem;
+        overflow-wrap: break-word;
     }
 
-    .right-header p {
-        font-size: 1.2rem;
-
-    }
-
-
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-right {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-
-    .controls {
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--bc-header-content-right);
-    }
-
-    .controls .control {
-        margin: .5rem .3rem;
-    }
-
-    main .section {
-        padding: 2rem 5rem;
+    .case-header_text {
+        font-size: 1.3rem;
+        margin-top: 2rem;
     }
 }
+
 
 
 @media screen and (max-width: 455px) {
