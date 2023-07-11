@@ -305,9 +305,8 @@ section {
 }
 
 .about-left p {
-    padding: 1rem;
     font-size: 1.5rem;
-    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .progress-bars {
@@ -429,19 +428,20 @@ section {
 .timeline-item h5 {
     padding: 1rem 0;
     text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .timeline-item h5 span {
     color: var(--color-orange);
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .timeline-item p {
     color: var(--fonts-color);
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 
@@ -602,6 +602,10 @@ section {
     border-radius: 5px 5px 0 0;
     transition: all .4s ease-in-out;
     filter: grayscale(50%);
+}
+
+.tks{
+    height: 400px;
 }
 
 .blog-text {
@@ -857,7 +861,7 @@ section {
 }
 
 .case-header_text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-top: 3rem;
 }
