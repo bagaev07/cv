@@ -531,7 +531,7 @@ section {
 }
 
 .portfolio-item:hover .portfolio-hover{
-    opacity: 1;
+    opacity:1;
     transform: scale(1);
     transition: all .5s ease-in-out;
 }
