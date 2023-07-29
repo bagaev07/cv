@@ -9,6 +9,11 @@ li {
     list-style: none;
 }
 
+p {
+    font-weight: bold;
+
+}
+
 :root {
     --fonts-color: #484866;
     --background-color: #f2f2fa;
@@ -712,7 +717,7 @@ section {
     display: flex;
     align-items: center;
     align-content: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -902,7 +907,7 @@ section {
 
 .case-item p{
     font-size: 1.3rem;
-    font-weight: normal;
+    font-weight: bold;
     padding-bottom: 1.3rem;
     letter-spacing: 1.1px;
 }
@@ -1203,11 +1208,17 @@ swiper-slide span {
     }
 
     .stat-title {
-        padding: 0.5rem;
+        margin: 2.2rem 0 .8rem 0;
+        color: var(--color-orange);
+        padding: 0;
+        font-size: 3rem;
     }
 
     .card3 {
         display: none;
+    }
+    .contact-text p {
+        letter-spacing: 1.1px;
     }
 
     .contact-content {
@@ -1215,6 +1226,7 @@ swiper-slide span {
     }
     .contact-icons {
         padding: 0;
+        flex-direction: column;
     }
 
 }
